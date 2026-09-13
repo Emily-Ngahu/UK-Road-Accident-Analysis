@@ -127,27 +127,6 @@ An end-to-end analysis of **117,536 road traffic accidents** recorded across Gre
 
 ---
 
-## Repository structure
-
-```
-├── uk_road_accident_analysis_2019.ipynb   # Full analysis: cleaning → EDA → Apriori → clustering → forecasting
-├── images/                                # Figures used in this README
-├── requirements.txt
-└── README.md
-```
-
-## How to run
-
-```bash
-git clone https://github.com/Emily-Ngahu/UK-Road-Accident-Analysis.git
-cd UK-Road-Accident-Analysis
-pip install -r requirements.txt
-```
-
-1. The notebook reads a local SQLite database named **`accident_data_v1.0.0_2023.db`** (≈200 MB), containing the STATS19 `accident`, `vehicle` and `casualty` tables plus an `lsoa` lookup table, provided as part of the module. It's too large for GitHub, so it isn't included.
-2. The underlying data is published by the Department for Transport under the **Open Government Licence v3.0**: [Road Safety Data](https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data).
-3. Place the database next to the notebook, open `uk_road_accident_analysis_2019.ipynb` in Jupyter, and run all cells.
-
 ## Tech stack
 
 Python · SQL (SQLite) · pandas · NumPy · mlxtend (Apriori) · scikit-learn (k-means, metrics) · XGBoost · Matplotlib · Seaborn · Jupyter
