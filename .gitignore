@@ -1,0 +1,7 @@
+*.db
+*.sqlite
+data/
+.ipynb_checkpoints/
+__pycache__/
+.claude/
+.DS_Store
